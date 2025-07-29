@@ -22,7 +22,7 @@ body {
 
 main {
     background-color: var(--Blue-900);
-    width: 18rem;
+    width: 15%;
     margin: min(5rem, 10vh) auto;
     padding: 1rem;
     border-radius: 10px;

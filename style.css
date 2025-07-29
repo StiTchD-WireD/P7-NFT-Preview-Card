@@ -22,13 +22,13 @@ body {
 
 main {
     background-color: var(--Blue-900);
-    width: 15%;
+    width: max(100%, 18vw);
     margin: min(5rem, 10vh) auto;
     padding: 1rem;
     border-radius: 10px;
     overflow: hidden;
     justify-content: center;
-    box-shadow: 1.2em 1.2em 1.2em #1a1a1a;
+    box-shadow: 1.2em 1.2em 1.2em var(--Blue-950);
 }
 
 /* container for the image and overlay */

@@ -1,0 +1,189 @@
+:root {
+    /*Colors*/
+    /*Primary*/
+    --Blue-500: hsl(215, 51%, 70%);
+    --Cyan-400: hsl(178, 100%, 50%);
+    /*Neutral*/
+    --Blue-950: hsl(217, 54%, 11%); /*main BG*/
+    --Blue-900: hsl(216, 50%, 16%); /*card BG*/
+    --Blue-800: hsl(215, 32%, 27%); /*line*/
+    --White: hsl(0, 0%, 100%);
+    /*Typography*/
+    /*Body Copy*/
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    /*Weights: 300, 400, 600*/
+}
+
+body {
+    background-color: var(--Blue-950);
+    color: var(--White);
+}
+
+main {
+    background-color: var(--Blue-900);
+    width: 18rem;
+    margin: min(5rem, 10vh) auto;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    box-shadow: 1.2em 1.2em 1.2em #1a1a1a;
+}
+
+/* container for the image and overlay */
+.header-img-container {
+    position: relative;
+    width: 100% ;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+/* Style for main image */
+.header-img-container img {
+    display: block;
+    width: max(100%, 18vw);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.header-img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max(100%, 18vw);
+    height: 100%;
+    background-color: var(--Cyan-400);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Position of view icon */
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* overlay on hover */
+.header-img-container:hover::after,
+.header-img-container:hover .view-icon,
+.header-img-container:focus::after,
+.header-img-container:focus .view-icon {
+    opacity: 0.5;
+}
+
+.header-img-container:hover .view-icon,
+.header-img-container:focus .view-icon {
+    opacity: 1;
+    width: 20%;
+}
+
+.header-img-container:focus {
+    outline: 2px solid var(--Cyan-400);
+    outline-offset: 2px;
+}
+
+#title {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--White);
+    font-weight: 400;
+}
+
+#title:hover,
+#title:focus {
+    color: var(--Cyan-400);
+}
+
+.header > p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--Blue-500);
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    letter-spacing: 0.05em;
+}
+
+img#eth-img {
+    height: 1.1rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+p#price {
+    margin-right: 5em;
+    color: var(--Cyan-400);
+}
+
+img#clock {
+    height: 1.1rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+p#time {
+    color: var(--Blue-500);
+}
+
+hr {
+    border: 1px solid var(--Blue-800);
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+.creator > img {
+    height: 2rem;
+    width: auto;
+    margin-right: 0.5rem;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+
+.creator > p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--Blue-500);
+}
+
+#creator-name {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#creator-name:hover,
+#creator-name:focus {
+    color: var(--Cyan-400);
+}
+
+footer {
+    font-size: 0.7rem;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+}
+
+footer > a {
+    color: var(--Cyan-400);
+}

@@ -11,7 +11,7 @@
     /*Typography*/
     /*Body Copy*/
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
+    font-size: 1.125px;
     /*Weights: 300, 400, 600*/
 }
 
@@ -28,7 +28,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
     justify-content: center;
-    box-shadow: 1.2em 1.2em 1.2em #1a1a1a;
+    box-shadow: 1.2em 1.2em 1.2em var(--Blue-950);
 }
 
 /* container for the image and overlay */

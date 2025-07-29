@@ -37,8 +37,8 @@ Browser:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github)](https://github.com/StiTchD-WireD/P7-NFT-Preview-Card)
+- Live Site URL: [GitHub Pages](https://stitchd-wired.github.io/P7-NFT-Preview-Card/)
 
 ## My process
 

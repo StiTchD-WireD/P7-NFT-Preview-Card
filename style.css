@@ -11,7 +11,7 @@
     /*Typography*/
     /*Body Copy*/
     font-family: 'Outfit', sans-serif;
-    font-size: 1.125px;
+    font-size: 18px;
     /*Weights: 300, 400, 600*/
 }
 
@@ -22,13 +22,13 @@ body {
 
 main {
     background-color: var(--Blue-900);
-    width: 20rem;
-    margin: 10rem auto;
+    width: 18rem;
+    margin: min(5rem, 10vh) auto;
     padding: 1rem;
     border-radius: 10px;
     overflow: hidden;
     justify-content: center;
-    box-shadow: 1.2em 1.2em 1.2em var(--Blue-950);
+    box-shadow: 1.2em 1.2em 1.2em #1a1a1a;
 }
 
 /* container for the image and overlay */
@@ -127,7 +127,7 @@ img#eth-img {
 }
 
 p#price {
-    margin-right: 4em;
+    margin-right: 5em;
     color: var(--Cyan-400);
 }
 
